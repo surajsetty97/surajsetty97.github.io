@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Suraj's Website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Shadows+Into+Light" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      wow = new WOW({
+      boxClass: 'wow', // default
+      animateClass: 'animated', // default
+      offset: 0, // default
+      mobile: true, // default
+      live: true // default
+  })
+  wow.init();
+  $( ".wow" ).addClass( "fadeInUp" );
+      // $("#page").particleground();
+      // $("#page").particleground({
+      //   dotColor: "white";
+      //   lineColor: "tangerine";
+      //
+      // });
+      $('.aboutlink').click(function(){
+        $('html,body').animate({
+          scrollTop: $(".about").offset().top
+        }, 800);
+      });
+      $('.projectslink').click(function(){
+        $('html,body').animate({
+          scrollTop: $(".projects").offset().top
+        }, 800);
+      });
+      $('.skillslink').click(function(){
+        $('html,body').animate({
+          scrollTop: $(".skills").offset().top
+        }, 800);
+      });
+    });
+    </script>
+  </head>
+  <body ng-app="myApp" ng-controller="MainController">
+    <div class="container-fluid" id="page">
+      <div class="contacts">
+        <p> Email: surajsetty97@gmail.com </p>
+        <p> GitHub: github.com/surajsetty97 </p>
+      </div>
+      <div class="middlediv">
+        <p class="middletext text-center"> What's Up <p>
+        <p class="smalltext text-center">Welcome to Suraj's Website</p>
+        <p class = "bottombar text-center"><span class="bottomlink aboutlink">About </span> | <span class="bottomlink projectslink"> Projects </span> | <span class="bottomlink skillslink"> Skills </span>
+        </div>
+    </div>
+    <div class="about">
+      <h1 class="text-center headertext"> About Myself</h1>
+      <hr class="blackhr" width="35%">
+      <div class="row aboutrow">
+        <div class= "col-md-3 col-md-offset-2 col-xs-6 col-xs-offset-3 aboutimgbox" >
+          <img src="img/suraj.jpg" class="img-responsive img-circle wow" data-wow-delay="0.4s" alt="Img of Suraj" width="300px" height="300px" >
+        </div>
+        <div class="col-md-5 col-md-offset-1 col-xs-8 col-xs-offset-2 abouttextbox wow" data-wow-delay="0.4s">
+          <h4 class="text-center"> A man with a passion for innovation. </h4>
+          <p class="abouttext text-center">Hello, my name is Suraj Setty. I am a second-year student at San Jose State University studying computer science. I enjoy developing java projects and learning new languages. In my free time, I like learning new technologies like web development, iOS app development, and Big Data.</p>
+        </div>
+      </div>
+    </div>
+    <div class="projects" >
+      <h1 class="text-center headertext"> Projects </h1>
+      <hr class="whitehr" width="35%">
+      <div class="row">
+      <div ng-repeat="project in projects">
+        <div class="col-md-4 col-md-offset-2 col-xs-7 col-xs-offset-1 col-md-6 col-md-offset-3 projectimages wow" data-wow-delay="0.4s">
+          <a ng-href="{{project.link}}">
+          <div class="view hm-zoom projectimg">
+            <img ng-src="{{project.img}}" class="img-fluid imageicon" >
+            <div class="mask flex-center">
+              <p class="white-text" style="font-size: 40px; background-color: black; alpha: 60%"> {{project.name}}</p>
+            </div>
+          </div>
+        </a>
+        <div class="descriptiondiv">
+          <p class="projectdescription">{{project.description}}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="skills">
+      <h1 class="text-center headertext"> Skills </h1>
+      <hr class="whitehr" width="35%">
+      <div id="skillset" class="wow" data-wow-delay="0.4s">
+        <div class="skillbar">
+          <div id="htmlskill">
+            <span class="skillarea">HTML5</span>
+            <span class="percenttext">50%</span>
+          </div>
+        </div>
+        <div class="skillbar">
+          <div id="cssskill">
+            <span class="skillarea">CSS3</span>
+            <span class="percenttext">40%</span>
+          </div>
+        </div>
+        <div class="skillbar">
+          <div id="jsskill">
+            <span class="skillarea">Javascript</span>
+            <span class="percenttext">40%</span>
+          </div>
+      </div>
+      <div class="skillbar">
+        <div id="jqueryskill">
+          <span class="skillarea">JQuery</span>
+          <span class="percenttext">20%</span>
+        </div>
+      </div>
+      <div class="skillbar">
+        <div id="bootskill">
+          <span class="skillarea">Bootstrap</span>
+          <span class="percenttext">30%</span>
+        </div>
+      </div>
+      <div class="skillbar">
+        <div id="angularskill">
+          <span class="skillarea">AngularJS</span>
+          <span class="percenttext">30%</span>
+        </div>
+      </div>
+      <div class="skillbar">
+        <div id="javaskill">
+          <span class="skillarea">Java</span>
+          <span class="percenttext">60%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Particle Effects -->
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/jquery.min.particleground.js"></script>
+  </body>
+</html>

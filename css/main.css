@@ -1,0 +1,583 @@
+@keyframes tutsFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes tutsRotate {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: coral;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: indianred;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: darksalmon;
+        transform: rotate(180deg)
+    }
+}
+
+.whitehr {
+    border-color: rgb(255, 255, 255);
+}
+
+.blackhr {
+    border-color: rgb(0, 0, 0);
+}
+
+
+.whitespace {
+    width: 600px;
+    height: 600px;
+    background-color: coral;
+    animation: square-to-circle 2s 2s infinite cubic-bezier(1, .015, .295, 1.225) alternate;
+}
+
+
+#page {
+    background: #FC4A1A;
+    width: 100%;
+}
+
+.contacts{
+  color: white;
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+  font-size: 1.25em;
+  font-family: 'Lato', sans-serif;
+}
+
+.middlediv {
+    margin-top: 20%;
+    color: white;
+}
+
+.middletext {
+  font-family: 'Lato', sans-serif;
+    font-size: 7em;
+}
+
+.bottombar {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin-top: 10em;
+    padding-bottom: 100px;
+}
+
+.bottomlink {
+    color: white;
+    cursor: pointer;
+}
+
+.smalltext {
+  font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+}
+
+.about {
+    background-color: #D9D9D9;
+    color: black;
+    margin-top: -20px;
+}
+
+.headertext {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 5em;
+    padding-top: 40px;
+}
+
+.abouttext {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 0px;
+}
+
+.aboutimgbox {
+    padding-bottom: 40px;
+}
+
+.aboutimgbox img {
+  border: 4px solid #F7B733;
+}
+
+.abouttextbox {
+    border-color: black;
+    border-width: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.abouttextbox h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.bottomlink:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.aboutrow {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.projects {
+    background-color: #E37222;
+    color: white;
+    margin-top: -20px;
+}
+
+.blackbackground {
+    background-color: black;
+}
+
+.projectimages {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.projectimg {
+    height: 300px;
+    width: 300px;
+    outline: 5px solid #07889B;
+}
+
+.imageicon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.descriptiondiv {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1em;
+    width: 300px;
+    color: black;
+    background-color: #66B9BF;
+    outline: 3px solid #EEAA78;
+    padding: 5px;
+    font-family: "Roboto Slab", serif;
+}
+
+.skills {
+    background-color: #6495ED;
+    margin-top: -20px;
+}
+
+.skills h1{
+  color: white;
+}
+
+#skillset {
+    font-size: 20px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    width: 75%;
+}
+
+.skillbar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+    box-shadow: 3px 3px 1px black;
+}
+
+.skillarea {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight:1000;
+    font-size: 18px;
+}
+
+.percenttext {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight:1000;
+    font-size: 14px;
+}
+
+#htmlskill {
+    width: 50%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: teal;
+}
+
+#cssskill {
+  width: 40%;
+  animation: Animate-CSS 4s;
+  -webkit-animation: Animate-CSS 4s;
+  -moz-animation: Animate-CSS 4s;
+  -o-animation: Animate-CSS 4s;
+  height: 50px;
+  position: absolute;
+  background-color: coral;
+}
+
+#jsskill {
+  width: 40%;
+  animation: Animate-JS 4s;
+  -webkit-animation: Animate-JS 4s;
+  -moz-animation: Animate-JS 4s;
+  -o-animation: Animate-JS 4s;
+  height: 50px;
+  position: absolute;
+  background-color: darkviolet;
+}
+
+#jqueryskill {
+  width: 20%;
+  animation: Animate-JQuery 4s;
+  -webkit-animation: Animate-JQuery 4s;
+  -moz-animation: Animate-JQuery 4s;
+  -o-animation: Animate-JQuery 4s;
+  height: 50px;
+  position: absolute;
+  background-color: seagreen;
+}
+
+#bootskill {
+  width: 30%;
+  animation: Animate-Boot 4s;
+  -webkit-animation: Animate-Boot 4s;
+  -moz-animation: Animate-Boot 4s;
+  -o-animation: Animate-Boot 4s;
+  height: 50px;
+  position: absolute;
+  background-color: firebrick;
+}
+
+#angularskill {
+  width: 30%;
+  animation: Animate-Angular 4s;
+  -webkit-animation: Animate-Angular 4s;
+  -moz-animation: Animate-Angular 4s;
+  -o-animation: Animate-Angular 4s;
+  height: 50px;
+  position: absolute;
+  background-color: slateblue;
+}
+
+#javaskill {
+  width: 60%;
+  animation: Animate-Java 4s;
+  -webkit-animation: Animate-Java 4s;
+  -moz-animation: Animate-Java 4s;
+  -o-animation: Animate-Java 4s;
+  height: 50px;
+  position: absolute;
+  background-color: tomato;
+}
+
+/*Animate-HTML*/
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-webkit-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-moz-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@-o-keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+/*Animate-CSS*/
+
+@keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-webkit-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-moz-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-o-keyframes Animate-CSS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+/*Animate-JS*/
+@keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-webkit-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-moz-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@-o-keyframes Animate-JS {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+/*Animate-JQuery*/
+
+@keyframes Animate-JQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@-webkit-keyframes Animate-JQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@-moz-keyframes Animate-JQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@-o-keyframes Animate-JQuery {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+/*Animate-Angular*/
+
+@keyframes Animate-Angular {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-webkit-keyframes Animate-Angular {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-moz-keyframes Animate-Angular {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-o-keyframes Animate-Angular {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+/*Animate-Java*/
+
+@keyframes Animate-Java {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes Animate-Java {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-moz-keyframes Animate-Java {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@-o-keyframes Animate-Java{
+    from {
+        width: 10px;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+/*Animate-Boot*/
+
+@keyframes Animate-Boot {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-webkit-keyframes Animate-Boot {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-moz-keyframes Animate-Boot {
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@-o-keyframes Animate-Boot{
+    from {
+        width: 10px;
+    }
+    to {
+        width: 30%;
+    }
+}
